@@ -34,7 +34,7 @@
 	);
 ?>
 
-<?php if( $_POST['create-signature'] ) : 
+<?php if(isset($_POST['create-signature'])){ 
 
 	$full_name = $_POST['full-name'];
 	$position = $_POST['position'];
@@ -45,6 +45,7 @@
 	$secondary_number_prefix = $_POST['secondary-number-type'];
 	$primary_number = $_POST['primary-number'];
 	$secondary_number = $_POST['secondary-number'];
+}
 ?>
 
 <!-- EMAIL SIGNATURE OUTPUT -->
